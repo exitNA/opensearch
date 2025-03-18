@@ -1,7 +1,7 @@
 version: 0.0.1
 type: plugin
 author: mark
-name: OpenSearch
+name: opensearch
 label:
   en_US: OpenSearch
   ja_JP: OpenSearch

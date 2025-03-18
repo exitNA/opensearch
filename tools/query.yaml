@@ -1,6 +1,6 @@
 identity:
-  name: OpenSearch
   author: mark
+  name: opensearch
   label:
     en_US: OpenSearch Query
     zh_Hans: OpenSearch查询
