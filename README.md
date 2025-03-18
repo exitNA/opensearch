@@ -1,11 +1,11 @@
 # OpenSearch plugin for Dify
 
 
-**Author:** [mark](https://github.com/exitNA)
-**Version:** 0.0.1
-**Type:** tool
+**Author:** [mark](https://github.com/exitNA)  
+**Version:** 0.0.1  
+**Type:** tool  
 **Github Repo:** [https://github.com/exitNA/opensearch](https://github.com/exitNA/opensearch)  
-**Github Issues:** [issues](https://github.com/exitNA/opensearch/issues)
+**Github Issues:** [issues](https://github.com/exitNA/opensearch/issues)  
 
 
 ---
