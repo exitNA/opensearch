@@ -35,6 +35,7 @@ This plugin is used to search data in OpenSearch.
 - size: The size of OpenSearch
 
 **output**
+![output variable](_assets/output-variable.png)
 - total: number of total matched docs
 - message: inner status message for debug
 - result: the result document list
