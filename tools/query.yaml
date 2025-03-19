@@ -29,14 +29,14 @@ parameters:
     type: string
     required: true
     label:
-      en_US: OpenSearch DSL Query
-      zh_Hans: OpenSearch DSL 查询语句
-      pt_BR: OpenSearch DSL Query
+      en_US: DSL Query
+      zh_Hans: 查询DSL
+      pt_BR: DSL Query
     human_description:
-      en_US: OpenSearch DSL Query
-      zh_Hans: OpenSearch DSL 查询语句
-      pt_BR: OpenSearch DSL Query
-    llm_description: OpenSearch DSL Query
+      en_US: DSL Query
+      zh_Hans: 查询DSL
+      pt_BR: DSL Query
+    llm_description: DSL Query
     form: llm
   - name: from
     type: number
@@ -68,3 +68,14 @@ parameters:
 extra:
   python:
     source: tools/query.py
+output_schema:
+  type: object
+  properties:
+    total:
+      type: number
+    message:
+      type: string
+    result:
+      type: array
+      items:
+        type: object

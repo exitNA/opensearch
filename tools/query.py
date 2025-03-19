@@ -25,16 +25,14 @@ class OpenSearchTool(Tool):
                 from_=from_,
                 size=size
             )
-            result = [hit["_source"] for hit in resp["hits"]["hits"]]
-            yield self.create_json_message({
-                'status': 'ok',
-                'message': 'ok',
-                'result': result
-            })
-
+            hits = resp['hits']
+            result = [hit['_source'] for hit in hits['hits']]
+            yield self.create_text_message(json.dumps(result, ensure_ascii=False, indent=2))
+            yield self.create_variable_message('total', hits['total']['value'])
+            yield self.create_variable_message('message', 'ok')
+            yield self.create_variable_message('result', result)
         except Exception as e:
-            yield self.create_json_message({
-                'status': 'error',
-                'message': repr(e),
-                'result': []
-            })
+            yield self.create_text_message('empty response')
+            yield self.create_variable_message('total', 0)
+            yield self.create_variable_message('message', repr(e))
+            yield self.create_variable_message('result', [])
