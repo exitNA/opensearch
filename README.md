@@ -4,8 +4,8 @@
 **Author:** [mark](https://github.com/exitNA)  
 **Version:** 0.0.2  
 **Type:** tool  
-**Github Repo:** [https://github.com/exitNA/opensearch](https://github.com/exitNA/opensearch)  
-**Github Issues:** [issues](https://github.com/exitNA/opensearch/issues)  
+**Github Repo:** [https://github.com/exitNA/opensearch-dify-plugin.git](https://github.com/exitNA/opensearch-dify-plugin.git)  
+**Github Issues:** [issues](https://github.com/exitNA/opensearch-dify-plugin/issues)  
 
 
 ---
